@@ -61,3 +61,9 @@ const clearBtn = document.getElementById('clear-history')
 callHistory.innerHTML = "";
 })
 
+// Copy count
+
+document.getElementById('copy-btn').addEventListener('click',function(){
+    console.log("Hello world");
+})
+
