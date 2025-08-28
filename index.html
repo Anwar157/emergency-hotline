@@ -4,11 +4,343 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency hotline</title>
+
+    <!-- daisy cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
-  <body></body>
+  <body class="bg-[#f5fff6]">
+    <!-- header section -->
+    <header>
+      <!-- navbar section -->
+      <nav>
+        <div
+          class="flex justify-between ml-2 mr-2 md:ml-12 md:mr-12 p-2 md:p-6">
+          <div class="flex items-center gap-1 md:gap-3">
+            <img class="max-h-12 max-w-12" src="assets/logo.png" alt="Logo" />
+            <h2
+              class="text-[#006747] font-extrabold text-[16px] md:text-[20px]">
+              Emergency <br />
+              Service
+            </h2>
+          </div>
+          <div class="flex items-center gap-1 md:gap-5">
+            <div class="flex items-center bg-[#41FF6B] gap-2 p-1 rounded-full">
+              <h2 class="ml-2 font-bold" id="nav-heart-icon">0</h2>
+              <img
+                class="max-h-6 max-w-6 md:max-h-7 md:max-w-7 mr-2"
+                src="assets/heart.png"
+                alt="heart-icon" />
+            </div>
+            <div class="flex items-center bg-[#41FF6B] gap-2 p-1 rounded-full">
+              <h2 class="ml-2 font-bold">100</h2>
+              <img
+                class="max-h-6 max-w-6 md:max-h-7 md:max-w-7 mr-2"
+                src="assets/coin.png"
+                alt="coin-icon" />
+            </div>
+            <div class="flex items-center bg-[#00A63E] gap-1 p-1 rounded-full">
+              <h2 class="ml-2 text-white font-bold">0</h2>
+              <p class="mr-2 text-white font-semibold">Copy</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <div
+        class="w-full md:w-full max-h-80 md:max-h-72 bg-gradient-to-r from-[#006747] to-[#013223]">
+        <div class="p-6">
+          <div class="flex justify-center items-center">
+            <img
+              class="max-h-24 max-w-24"
+              src="assets/logo-dark.png"
+              alt="logo-dark" />
+          </div>
+          <div class="text-center mt-3">
+            <h2 class="text-white font-semibold text-[40px]">
+              জরুরি সেবা ডিরেক্টরি
+            </h2>
+            <p class="text-white font-semibold text-[20px]">
+              Government Emergency Services at Your Fingertip – A Project by
+              Government of the People’s Republic of Bangladesh
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main>
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/emergency.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">জ</h2>
+              <p>N</p>
+            </div>
+            <h2 class="p-4 font-bold">9</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                স
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/police.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">প</h2>
+              <p>p</p>
+            </div>
+            <h2 class="p-4 font-bold">9</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                প
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/fire-service.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">ফ</h2>
+              <p>F</p>
+            </div>
+            <h2 class="p-4 font-bold">9</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                ফ
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/ambulance.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">অ</h2>
+              <p>A</p>
+            </div>
+            <h2 class="p-4 font-bold">1</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                স্ব
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/emergency.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">ন</h2>
+              <p>W</p>
+            </div>
+            <h2 class="p-4 font-bold">1</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                স
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/emergency.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">দ</h2>
+              <p>A</p>
+            </div>
+            <h2 class="p-4 font-bold">1</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                স
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/emergency.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">ি</h2>
+              <p>E</p>
+            </div>
+            <h2 class="p-4 font-bold">1</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                ি
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/emergency.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">ব্র</h2>
+              <p>B</p>
+            </div>
+            <h2 class="p-4 font-bold">1</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                এ
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="shadow-lg ml-4 md:ml-10 mt-12 rounded-lg w-full">
+            <div class="flex justify-between items-center p-4">
+              <div class="max-h-14 max-w-14 bg-[#FFE3E2] rounded-lg">
+                <img class="p-4" src="assets/emergency.png" alt="" />
+              </div>
+              <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold">ব</h2>
+              <p>B</p>
+            </div>
+            <h2 class="p-4 font-bold">1</h2>
+            <div class="p-4">
+              <button
+                class="btn btn-sm p-2 rounded-full text-left w-[15%] flex justify-start">
+                প
+              </button>
+            </div>
+            <div class="p-4 flex justify-between">
+              <button class="btn w-[45%] rounded-lg text-[#5C5C5C]">
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button class="btn w-[45%] rounded-lg bg-[#00A63E] text-white">
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-[400px] mt-8 ml-4 md:ml-16 shadow-lg">
+          <div class="flex justify-between items-center p-6">
+            <h2 class="flex items-center gap-2">
+              <i class="fa-regular fa-clock"></i>Call History
+            </h2>
+            <button class="btn rounded-full bg-[#00A63E] text-white">
+              Default
+            </button>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
