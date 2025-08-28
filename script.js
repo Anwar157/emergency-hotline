@@ -63,7 +63,13 @@ callHistory.innerHTML = "";
 
 // Copy count
 
-document.getElementById('copy-btn').addEventListener('click',function(){
-    console.log("Hello world");
+let copyCount = 0;
+const copyButtons = document.querySelectorAll('.copy-btn');
+copyButtons.forEach(function(button){
+    button.addEventListener('click', function(){
+        copyCount++;
+        document.getElementById('copy-counter').innerText = copyCount;
+    })
 })
+
 
