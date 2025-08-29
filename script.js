@@ -72,4 +72,21 @@ copyButtons.forEach(function(button){
     })
 })
 
+// Copy number
 
+const copyButton = document.querySelectorAll('.copy-btn');
+copyButton.forEach(function(button){
+    button.addEventListener('click', function(){
+        const card = button.closest('.card-info');
+        const helpNumber = card.querySelectorAll('h2')[1].innerText;
+
+        navigator.clipboard.writeText(helpNumber)
+        .then(() => {
+            alert(`copied: ${helpNumber}`);
+        })
+        .catch(err=> {
+            console.error('Failed to copy', err);
+        });
+    
+    });
+});
